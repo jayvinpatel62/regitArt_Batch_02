@@ -1059,3 +1059,38 @@ table .filterDropdown{
 
     }
 }
+
+/*------------------ new css batch-02 --------------*/
+.custom-dialog-540{
+    max-width: 540px;
+    box-shadow: 4px 4px 32px 0px #00000029;
+    border-radius: 12px !important;
+    .close-cstm{
+        --size:28px;
+        background: #D9D9D9;
+        width: var(--size);
+        height: var(--size);
+        border-radius: var(--size);
+        color: white;
+    }
+}
+.flagModaltitle{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.btn-140{
+    min-width: 140px;
+    height: 44px;
+    line-height: 44px;
+}
+.btn-green{
+    --color:#9FB699;
+    background: var(--color);
+    color: white;
+}
+.btn-red{
+    --color:#CE754C;
+    background: var(--color) !important;
+    color: white !important;
+}
