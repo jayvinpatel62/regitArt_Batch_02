@@ -1074,6 +1074,22 @@ table .filterDropdown{
         color: white;
     }
 }
+.custom-dialog{
+    box-shadow: 4px 4px 32px 0px #00000029;
+    border-radius: 12px !important;
+    .close-cstm{
+        --size:28px;
+        background: #D9D9D9;
+        width: var(--size);
+        height: var(--size);
+        border-radius: var(--size);
+        color: white;
+    }
+}
+.uk-modal-dialog.dialog-massUpdate{
+    max-width: 710px !important;
+    width: 100%;
+}
 .flagModaltitle{
     font-size: 18px;
     font-weight: 500;
@@ -1093,4 +1109,58 @@ table .filterDropdown{
     --color:#CE754C;
     background: var(--color) !important;
     color: white !important;
+}
+
+.header-modal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #B3B3B3;
+    .heading{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    .btn{
+        font-family: Josefin Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1.5px solid #B3B3B3;
+        border-radius:8px !important;
+    }
+}
+.inlineForm-cstm{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
+    > div{
+        flex: 1;
+    }
+    .col-form-label{
+        flex-basis: 132px;
+        font-family: Helvetica;
+        font-size: 16px;
+        font-weight: 400;
+
+    }
+}
+
+.accordian-massupdate{
+    .uk-accordion-title{
+        background: #F2F2F2;
+        font-family: Helvetica;
+        font-size: 16px;
+        font-weight: 400;
+        padding:15px 15px;
+    }
 }
