@@ -1164,3 +1164,55 @@ table .filterDropdown{
         padding:15px 15px;
     }
 }
+
+.file_button_container,
+.file_button_container input{
+    height: 44px;
+    width: 174px;
+}
+
+.file_button_container {
+    background:var(--primary-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    border-radius: 4px;
+}
+
+.file_button_container input {
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+}
+.uploadfile-storage{
+    background: #F2F2F2;
+    min-width: 200px;
+    border-radius: 4px;
+    padding: 10px 10px;
+    color:#6C6B6B;
+    font-size: 14px;
+}
+.file-uploaded{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    a{
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: 400;
+        color: #6C6B6B;
+        text-decoration: underline;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding: 4px 0;
+        .remove{
+            color: #CE754C;
+        }
+    }
+}
