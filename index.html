@@ -70,21 +70,36 @@
                                 <li>
                                     <a href="#" class="navlink">
                                         <img src="assets/icons/setting 1.png" class="img-fluid" />
-                                        Mass Update</a>
-                                        <div class="uk-navbar-dropdown filterDropdown"  uk-dropdown="pos: bottom-left; boundary: !.uk-navbar-nav; shift: false; flip: false;animation: uk-animation-slide-top-small; animate-out: true">
-                                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                <li><a href="#modal-massUpdate" uk-toggle>LOAN</a></li>
-                                                <li><a href="#">INVENTORY</a></li>
-                                                <li><a href="#">LIST</a></li>
-                                                <li><a href="#">EXCEL EXPORT</a></li>
-                                                <li><a href="#">PDF</a></li>
-                                                <li><a href="#">LABELS</a></li>
-                                            </ul>
-                                        </div>
+                                        Mass Update
+                                    </a>
+                                    <div class="uk-navbar-dropdown filterDropdown"  uk-dropdown="pos: bottom-left; boundary: !.uk-navbar-nav; shift: false; flip: false;animation: uk-animation-slide-top-small; animate-out: true">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="#modal-massUpdate" uk-toggle>LOAN</a></li>
+                                            <li><a href="#">INVENTORY</a></li>
+                                            <li><a href="#">LIST</a></li>
+                                            <li><a href="#">EXCEL EXPORT</a></li>
+                                            <li><a href="#">PDF</a></li>
+                                            <li><a href="#">LABELS</a></li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li><a href="#" class="navlink">
-                                    <img src="assets/icons/CREATE 1.png" class="img-fluid" />
-                                    Create</a></li>
+                                
+                                <li>
+                                    <a href="#" class="navlink">
+                                        <img src="assets/icons/CREATE 1.png" class="img-fluid" />
+                                        Create
+                                    </a>
+                                    <div class="uk-navbar-dropdown filterDropdown"  uk-dropdown="pos: bottom-left; boundary: !.uk-navbar-nav; shift: false; flip: false;animation: uk-animation-slide-top-small; animate-out: true">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="#modal-createLoan" uk-toggle>LOAN</a></li>
+                                            <li><a href="#modal-createInventory" uk-toggle>INVENTORY</a></li>
+                                            <li><a href="#">LIST</a></li>
+                                            <li><a href="#">EXCEL EXPORT</a></li>
+                                            <li><a href="#">PDF</a></li>
+                                            <li><a href="#">LABELS</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
                                 <li><a href="#" class="navlink">
                                     <img src="assets/icons/layout 1.png" class="img-fluid" />
                                     Change Page Layout</a></li>
@@ -781,16 +796,82 @@
 
          <!---------- modal-flagRemove ----------------->
          <div id="modal-flagRemove" class="uk-flex-top" uk-modal>
-            <div class="uk-modal-dialog custom-dialog-540 uk-modal-body uk-margin-auto-vertical">
+            <div class="uk-modal-dialog custom-dialog custom-dialog-540 uk-modal-body uk-margin-auto-vertical">
         
                 <button class="uk-modal-close-default close-cstm" type="button" uk-close></button>
         
                 <div class="text-center">
-                    <h1 class="flagModaltitle">ARE YOU SURE THAT YOU WANT TO DELETE THE 3 FOUND FLAGGED WORKS?</h1>
+                    <h1 class="modal-title uppr">ARE YOU SURE THAT YOU WANT TO DELETE THE 3 FOUND FLAGGED WORKS?</h1>
                     <br>
                     <div class="d-flex align-items-center justify-content-center gap-2">
-                        <a href="" class="btn btn-green btn-140">Yes</a>
-                        <a href="" class="btn btn-red btn-140">No</a>
+                        <a href="" class="btn btn-flex btn-green btn-140">Yes</a>
+                        <a href="" class="btn btn-flex btn-red btn-140">No</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+
+        <!---------- modal-create Loan ----------------->
+        <div id="modal-createLoan" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog custom-dialog custom-dialog-420 uk-modal-body uk-margin-auto-vertical">
+        
+                <button class="uk-modal-close-default close-cstm" type="button" uk-close></button>
+        
+                <div>
+                    <h1 class="modal-title text-center uppr">CREATE LOAN</h1>
+                    <br>
+                    <div class="form-content-check">
+                        <div class="d-block form-check custom-check">
+                            <input class="form-check-input" type="radio" name="createloantype" id="createloantype1">
+                            <label class="form-check-label" for="createloantype1">
+                                Use flagged works
+                            </label>
+                        </div>
+                        <div class="d-block form-check custom-check">
+                            <input class="form-check-input" type="radio" name="createloantype" id="createloantype2" checked>
+                            <label class="form-check-label" for="createloantype2">
+                                Use current search
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="d-flex align-items-center justify-content-center gap-2 text-center">
+                        <a href="" class="btn btn-flex btn-green btn-140">PROCEED</a>
+                        <a href="" class="btn btn-flex btn-red btn-140">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!---------- modal-create Inventory ----------------->
+         <div id="modal-createInventory" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog custom-dialog custom-dialog-420 uk-modal-body uk-margin-auto-vertical">
+        
+                <button class="uk-modal-close-default close-cstm" type="button" uk-close></button>
+        
+                <div>
+                    <h1 class="modal-title text-center uppr">CREATE INVENTORY LIST</h1>
+                    <br>
+                    <div class="form-content-check">
+                        <div class="d-block form-check custom-check">
+                            <input class="form-check-input" type="radio" name="createInventorytype" id="createInventorytype1">
+                            <label class="form-check-label" for="createInventorytype1">
+                                Use flagged works
+                            </label>
+                        </div>
+                        <div class="d-block form-check custom-check">
+                            <input class="form-check-input" type="radio" name="createInventorytype" id="createInventorytype2" checked>
+                            <label class="form-check-label" for="createInventorytype2">
+                                Use current search
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="d-flex align-items-center justify-content-center gap-2 text-center">
+                        <a href="" class="btn btn-flex btn-green btn-140">PROCEED</a>
+                        <a href="" class="btn btn-flex btn-red btn-140">Cancel</a>
                     </div>
                 </div>
             </div>

@@ -1061,19 +1061,7 @@ table .filterDropdown{
 }
 
 /*------------------ new css batch-02 --------------*/
-.custom-dialog-540{
-    max-width: 540px;
-    box-shadow: 4px 4px 32px 0px #00000029;
-    border-radius: 12px !important;
-    .close-cstm{
-        --size:28px;
-        background: #D9D9D9;
-        width: var(--size);
-        height: var(--size);
-        border-radius: var(--size);
-        color: white;
-    }
-}
+
 .custom-dialog{
     box-shadow: 4px 4px 32px 0px #00000029;
     border-radius: 12px !important;
@@ -1090,10 +1078,24 @@ table .filterDropdown{
     max-width: 710px !important;
     width: 100%;
 }
-.flagModaltitle{
+.uk-modal-dialog.custom-dialog-420{
+    max-width: 420px !important;
+    width: 100%;
+}
+.uk-modal-dialog.custom-dialog-540{
+    max-width: 540px !important;
+    width: 100%;
+}
+.modal-title{
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
+}
+.btn-flex{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
 }
 .btn-140{
     min-width: 140px;
@@ -1214,5 +1216,24 @@ table .filterDropdown{
         .remove{
             color: #CE754C;
         }
+    }
+}
+
+.form-content-check{
+    .form-check-label{
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: 400;
+
+    }
+}
+
+.custom-check{
+    .form-check-input:checked[type=radio] {
+        --bs-form-check-bg-image: none !important;
+    }
+    .form-check-input:checked {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
     }
 }
