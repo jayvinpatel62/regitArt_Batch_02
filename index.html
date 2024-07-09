@@ -93,8 +93,8 @@
                                         <ul class="uk-nav uk-navbar-dropdown-nav">
                                             <li><a href="#modal-createLoan" uk-toggle>LOAN</a></li>
                                             <li><a href="#modal-createInventory" uk-toggle>INVENTORY</a></li>
-                                            <li><a href="#">LIST</a></li>
-                                            <li><a href="#">EXCEL EXPORT</a></li>
+                                            <li><a href="#modal-createList" uk-toggle>LIST</a></li>
+                                            <li><a href="#modal-createExcelExport" uk-toggle>EXCEL EXPORT</a></li>
                                             <li><a href="#">PDF</a></li>
                                             <li><a href="#">LABELS</a></li>
                                         </ul>
@@ -804,8 +804,8 @@
                     <h1 class="modal-title uppr">ARE YOU SURE THAT YOU WANT TO DELETE THE 3 FOUND FLAGGED WORKS?</h1>
                     <br>
                     <div class="d-flex align-items-center justify-content-center gap-2">
-                        <a href="" class="btn btn-flex btn-green btn-140">Yes</a>
-                        <a href="" class="btn btn-flex btn-red btn-140">No</a>
+                        <a href="" class="btn btn-flex btn-green btn-140 uppr">Yes</a>
+                        <a href="" class="btn btn-flex btn-red btn-140 uppr">No</a>
                     </div>
                 </div>
             </div>
@@ -823,13 +823,13 @@
                     <h1 class="modal-title text-center uppr">CREATE LOAN</h1>
                     <br>
                     <div class="form-content-check">
-                        <div class="d-block form-check custom-check">
+                        <div class="d-block form-check custom-form-check">
                             <input class="form-check-input" type="radio" name="createloantype" id="createloantype1">
                             <label class="form-check-label" for="createloantype1">
                                 Use flagged works
                             </label>
                         </div>
-                        <div class="d-block form-check custom-check">
+                        <div class="d-block form-check custom-form-check">
                             <input class="form-check-input" type="radio" name="createloantype" id="createloantype2" checked>
                             <label class="form-check-label" for="createloantype2">
                                 Use current search
@@ -838,15 +838,15 @@
                     </div>
                     <br>
                     <div class="d-flex align-items-center justify-content-center gap-2 text-center">
-                        <a href="" class="btn btn-flex btn-green btn-140">PROCEED</a>
-                        <a href="" class="btn btn-flex btn-red btn-140">Cancel</a>
+                        <a href="" class="btn btn-flex btn-green btn-140 uppr">PROCEED</a>
+                        <a href="" class="btn btn-flex btn-red btn-140 uppr">Cancel</a>
                     </div>
                 </div>
             </div>
         </div>
 
-         <!---------- modal-create Inventory ----------------->
-         <div id="modal-createInventory" class="uk-flex-top" uk-modal>
+        <!---------- modal-create Inventory ----------------->
+        <div id="modal-createInventory" class="uk-flex-top" uk-modal>
             <div class="uk-modal-dialog custom-dialog custom-dialog-420 uk-modal-body uk-margin-auto-vertical">
         
                 <button class="uk-modal-close-default close-cstm" type="button" uk-close></button>
@@ -855,13 +855,13 @@
                     <h1 class="modal-title text-center uppr">CREATE INVENTORY LIST</h1>
                     <br>
                     <div class="form-content-check">
-                        <div class="d-block form-check custom-check">
+                        <div class="d-block form-check custom-form-check">
                             <input class="form-check-input" type="radio" name="createInventorytype" id="createInventorytype1">
                             <label class="form-check-label" for="createInventorytype1">
                                 Use flagged works
                             </label>
                         </div>
-                        <div class="d-block form-check custom-check">
+                        <div class="d-block form-check custom-form-check">
                             <input class="form-check-input" type="radio" name="createInventorytype" id="createInventorytype2" checked>
                             <label class="form-check-label" for="createInventorytype2">
                                 Use current search
@@ -870,8 +870,192 @@
                     </div>
                     <br>
                     <div class="d-flex align-items-center justify-content-center gap-2 text-center">
-                        <a href="" class="btn btn-flex btn-green btn-140">PROCEED</a>
-                        <a href="" class="btn btn-flex btn-red btn-140">Cancel</a>
+                        <a href="" class="btn btn-flex btn-green btn-140 uppr">PROCEED</a>
+                        <a href="" class="btn btn-flex btn-red btn-140 uppr">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------- modal-create List ----------------->
+        <div id="modal-createList" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog custom-dialog custom-dialog-420 uk-modal-body uk-margin-auto-vertical">
+        
+                <button class="uk-modal-close-default close-cstm" type="button" uk-close></button>
+        
+                <div>
+                    <h1 class="modal-title text-center uppr">CREATE LIST</h1>
+                    <br>
+                    <div class="form-content-check">
+                        <div class="d-block form-check custom-form-check">
+                            <input class="form-check-input" type="radio" name="createListtype" id="createListtype1">
+                            <label class="form-check-label" for="createListtype1">
+                                Use flagged works
+                            </label>
+                        </div>
+                        <div class="d-block form-check custom-form-check">
+                            <input class="form-check-input" type="radio" name="createListtype" id="createListtype2" checked>
+                            <label class="form-check-label" for="createListtype2">
+                                Use current search
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="d-flex align-items-center justify-content-center gap-2 text-center">
+                        <a href="" class="btn btn-flex btn-green btn-140 uppr">PROCEED</a>
+                        <a href="" class="btn btn-flex btn-red btn-140 uppr">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         <!---------- modal-create Excel Export ----------------->
+         <div id="modal-createExcelExport" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog custom-dialog custom-dialog-840 uk-modal-body uk-margin-auto-vertical">
+        
+                <button class="uk-modal-close-default close-cstm" type="button" uk-close></button>
+        
+                <div>
+                    <h1 class="modal-title text-center uppr">CREATE EXCEL EXPORT</h1>
+                    <br>
+                    <div class="form-content-check">
+                        <div class="d-block form-check custom-form-check">
+                            <input class="form-check-input" type="radio" name="createExcelExporttype" id="createExcelExporttype1">
+                            <label class="form-check-label" for="createExcelExporttype1">
+                                Use flagged works
+                            </label>
+                        </div>
+
+                        <div class="d-block form-check custom-form-check">
+                            <input class="form-check-input" type="radio" name="createExcelExporttype" id="createExcelExporttype2" checked>
+                            <label class="form-check-label" for="createExcelExporttype2">
+                                Use current search
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-12 col-md-6 excelExportWrapper availableFolcs">
+                            <div class="text-center text-title">Available folcs</div>
+                            <br>
+                            <div class="box">
+                                <div class="searchbox addon">
+                                    <input type="search" name="" id="" placeholder="Search">
+                                    <i class="bi bi-search icon"></i>
+                                </div>
+                                <div class="item-wrapper scroller">
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="Available item" id="Titel">
+                                        <label class="form-check-label" for="Titel">
+                                            Titel
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="Available item" id="Framställningsår">
+                                        <label class="form-check-label" for="Framställningsår">
+                                            Framställningsår
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="Available item" id="Teknik">
+                                        <label class="form-check-label" for="Teknik">
+                                            Teknik
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="Available item" id="Medium">
+                                        <label class="form-check-label" for="Medium">
+                                            Medium
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="Available item" id="Upplaga">
+                                        <label class="form-check-label" for="Upplaga">
+                                            Upplaga
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="Available item" id="Matt">
+                                        <label class="form-check-label" for="Matt">
+                                            Matt
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="Available item" id="Ort">
+                                        <label class="form-check-label" for="Ort">
+                                            Ort
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="Available item" id="Address">
+                                        <label class="form-check-label" for="Address">
+                                            Address
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="Available item" id="Byggnad">
+                                        <label class="form-check-label" for="Byggnad">
+                                            Byggnad
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 excelExportWrapper currentPageElds">
+                            <div class="text-center text-title">Current page elds</div>
+                            <br>
+                            <div class="box bg-white">
+                                <div class="item-wrapper scroller">
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="currentPageElds item" id="Inköpsår" checked>
+                                        <label class="form-check-label" for="Inköpsår">
+                                            Inköpsår
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="currentPageElds item" id="Inköpspris" checked>
+                                        <label class="form-check-label" for="Inköpspris">
+                                            Inköpspris
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="currentPageElds item" id="Inköpsplats" checked>
+                                        <label class="form-check-label" for="Inköpsplats">
+                                            Inköpsplats
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="currentPageElds item" id="Use current search" checked>
+                                        <label class="form-check-label" for="Use current search">
+                                            Use current search
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="currentPageElds item" id="Use current search" checked>
+                                        <label class="form-check-label" for="Use current search">
+                                            Use current search
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="currentPageElds item" id="Use current search" checked>
+                                        <label class="form-check-label" for="Use current search">
+                                            Use current search
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="currentPageElds item" id="Szatus" checked>
+                                        <label class="form-check-label" for="Szatus">
+                                            Szatus
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="d-flex align-items-center justify-content-center gap-2 text-center">
+                        <a href="" class="btn btn-flex btn-green btn-140 uppr">Create</a>
+                        <a href="" class="btn btn-flex btn-red btn-140 uppr">Cancel</a>
                     </div>
                 </div>
             </div>
