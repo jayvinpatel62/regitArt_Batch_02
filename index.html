@@ -95,7 +95,7 @@
                                             <li><a href="#modal-createInventory" uk-toggle>INVENTORY</a></li>
                                             <li><a href="#modal-createList" uk-toggle>LIST</a></li>
                                             <li><a href="#modal-createExcelExport" uk-toggle>EXCEL EXPORT</a></li>
-                                            <li><a href="#">PDF</a></li>
+                                            <li><a href="#modal-createPDF" uk-toggle>PDF</a></li>
                                             <li><a href="#">LABELS</a></li>
                                         </ul>
                                     </div>
@@ -909,8 +909,8 @@
             </div>
         </div>
         
-         <!---------- modal-create Excel Export ----------------->
-         <div id="modal-createExcelExport" class="uk-flex-top" uk-modal>
+        <!---------- modal-create Excel Export ----------------->
+        <div id="modal-createExcelExport" class="uk-flex-top" uk-modal>
             <div class="uk-modal-dialog custom-dialog custom-dialog-840 uk-modal-body uk-margin-auto-vertical">
         
                 <button class="uk-modal-close-default close-cstm" type="button" uk-close></button>
@@ -1050,6 +1050,97 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="d-flex align-items-center justify-content-center gap-2 text-center">
+                        <a href="" class="btn btn-flex btn-green btn-140 uppr">Create</a>
+                        <a href="" class="btn btn-flex btn-red btn-140 uppr">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------- modal-create PDF ----------------->
+        <div id="modal-createPDF" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog custom-dialog custom-dialog-840 uk-modal-body uk-margin-auto-vertical">
+        
+                <button class="uk-modal-close-default close-cstm" type="button" uk-close></button>
+        
+                <div>
+                    <h1 class="modal-title text-center uppr">CREATE PDF</h1>
+                    <br>
+                    <div class="form-content-check">
+                        <div class="d-block form-check custom-form-check">
+                            <input class="form-check-input" type="radio" name="createPDFtype" id="createPDFtype1">
+                            <label class="form-check-label" for="createPDFtype1">
+                                Use flagged works
+                            </label>
+                        </div>
+
+                        <div class="d-block form-check custom-form-check">
+                            <input class="form-check-input" type="radio" name="createPDFtype" id="createPDFtype2" checked>
+                            <label class="form-check-label" for="createPDFtype2">
+                                Use current search
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="d-block form-check custom-form-check">
+                                <input class="form-check-input" type="checkbox" name="Standardtemplate" id="Standardtemplate">
+                                <label class="form-check-label" for="Standardtemplate">
+                                    Standard template
+                                </label>
+                            </div>
+                            <br>
+                            <ul uk-accordion class="arrow accordian-createpdf">
+                                <li>
+                                    <a class="uk-accordion-title" href>Choose paper orientation</a>
+                                    <div class="uk-accordion-content">
+                                        <div class="paper-size-btns">
+                                            <a href="" class="link">Portrait</a>
+                                            <a href="" class="link">Landscape</a>
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                            <br>
+                            <div class="d-block form-check custom-form-check">
+                                <input class="form-check-input" type="checkbox" name="IncludeImages" id="IncludeImages">
+                                <label class="form-check-label" for="IncludeImages">
+                                    Include Images
+                                </label>
+                            </div>
+                            <p class="text-small">This option creates a pdf with the current page layout. You can change the layout of the page by going to “Change page layout” menu.</p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="d-block form-check custom-form-check">
+                                <input class="form-check-input" type="checkbox" name="Yourowntemplate" id="Yourowntemplate">
+                                <label class="form-check-label" for="Yourowntemplate">
+                                    Your own template
+                                </label>
+                            </div>
+                            <br>
+                            <ul uk-accordion class="arrow accordian-createpdf" open>
+                                <li>
+                                    <a class="uk-accordion-title" href>Choose your own template</a>
+                                    <div class="uk-accordion-content">
+                                        <div class="paper-size-btns">
+                                            <a href="" class="link">My template 1</a>
+                                            <a href="" class="link">My template 2</a>
+                                            <a href="" class="link">My template 3</a>
+                                            <a href="" class="link">My template 4</a>
+                                            <a href="" class="link">My template 5</a>
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                            <p class="text-small">This option creates a pdf with the current page layout. You can change the layout of the page by going to “Change page layout” menu.</p>
+
                         </div>
                     </div>
                     <br>
