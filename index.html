@@ -100,7 +100,7 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="#" class="navlink">
+                                <li><a class="navlink" href="#modal-changeLayout" uk-toggle>
                                     <img src="assets/icons/layout 1.png" class="img-fluid" />
                                     Change Page Layout</a></li>
                                 <li>
@@ -1224,6 +1224,145 @@
                         <a href="" class="btn btn-flex btn-green btn-140 uppr">Create</a>
                         <a href="" class="btn btn-flex btn-red btn-140 uppr">Cancel</a>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------- modal-create Excel Export ----------------->
+        <div id="modal-changeLayout" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog custom-dialog custom-dialog-840 uk-modal-body uk-margin-auto-vertical">
+        
+                <button class="uk-modal-close-default close-cstm" type="button" uk-close></button>
+        
+                <div>
+                    <h1 class="modal-title text-center uppr">Change Page Layout</h1>
+                    
+                    <br>
+                    <div class="row">
+                        <div class="col-12 col-md-6 excelExportWrapper availableFolcs">
+                            <div class="text-center text-title">Available folcs</div>
+                            <br>
+                            <div class="box">
+                                <div class="searchbox addon">
+                                    <input type="search" name="" id="" placeholder="Search">
+                                    <i class="bi bi-search icon"></i>
+                                </div>
+                                <div class="item-wrapper scroller">
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="Available item" id="Titel">
+                                        <label class="form-check-label" for="Titel">
+                                            Titel
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="Available item" id="Framställningsår">
+                                        <label class="form-check-label" for="Framställningsår">
+                                            Framställningsår
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="Available item" id="Teknik">
+                                        <label class="form-check-label" for="Teknik">
+                                            Teknik
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="Available item" id="Medium">
+                                        <label class="form-check-label" for="Medium">
+                                            Medium
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="Available item" id="Upplaga">
+                                        <label class="form-check-label" for="Upplaga">
+                                            Upplaga
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="Available item" id="Matt">
+                                        <label class="form-check-label" for="Matt">
+                                            Matt
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="Available item" id="Ort">
+                                        <label class="form-check-label" for="Ort">
+                                            Ort
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="Available item" id="Address">
+                                        <label class="form-check-label" for="Address">
+                                            Address
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="Available item" id="Byggnad">
+                                        <label class="form-check-label" for="Byggnad">
+                                            Byggnad
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 excelExportWrapper currentPageElds">
+                            <div class="text-center text-title">Current page elds</div>
+                            <br>
+                            <div class="box bg-white">
+                                <div class="item-wrapper scroller">
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="currentPageElds item" id="Inköpsår" checked>
+                                        <label class="form-check-label" for="Inköpsår">
+                                            Inköpsår
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="currentPageElds item" id="Inköpspris" checked>
+                                        <label class="form-check-label" for="Inköpspris">
+                                            Inköpspris
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="currentPageElds item" id="Inköpsplats" checked>
+                                        <label class="form-check-label" for="Inköpsplats">
+                                            Inköpsplats
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="currentPageElds item" id="Use current search" checked>
+                                        <label class="form-check-label" for="Use current search">
+                                            Use current search
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="currentPageElds item" id="Use current search" checked>
+                                        <label class="form-check-label" for="Use current search">
+                                            Use current search
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="currentPageElds item" id="Use current search" checked>
+                                        <label class="form-check-label" for="Use current search">
+                                            Use current search
+                                        </label>
+                                    </div>
+                                    <div class="d-block form-check custom-form-check">
+                                        <input class="form-check-input" type="checkbox" name="currentPageElds item" id="Szatus" checked>
+                                        <label class="form-check-label" for="Szatus">
+                                            Szatus
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="d-flex align-items-center gap-3 flex-wrap justify-content-center">
+                        <button class="btn btn-outline-light-gray radius-8 min-100">LOAD SAVED LAYOUT</button>
+                        <button class="btn btn-outline-light-gray radius-8 min-100">SAVE LAYOUT</button>
+                        <button class="btn btn-outline-light-gray radius-8 min-100">GO</button>
+                    </div>
+                    
                 </div>
             </div>
         </div>

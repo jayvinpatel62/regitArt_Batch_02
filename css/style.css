@@ -1418,3 +1418,22 @@ table .filterDropdown{
     }
     
 }
+
+.btn-outline-gray{
+    height: 44px;
+    border-color: #40403F !important;
+    color: #40403F !important;
+    border-radius: 4px;
+}
+.btn-outline-light-gray{
+    border-color: #B3B3B3 !important;
+    color: #40403F !important;
+    border-radius: 4px;
+}
+.radius-8{
+    border-radius: 8px !important;
+}
+
+.min-100{
+    min-width: 100px;
+}
